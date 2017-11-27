@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="demo.com.demosendtoserver.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="姓名"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="24dp" />
+
+    <TextView
+        android:id="@+id/tv_age"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="年齡"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name"
+        android:layout_marginStart="24dp" />
+    <TextView
+        android:id="@+id/tv_male"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="性別"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_age"
+        android:layout_marginStart="24dp" />
+
+    <TextView
+        android:id="@+id/tv_phoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:text="電話"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_male"
+        android:layout_marginStart="24dp" />
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="住址"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_phoneNumber"
+        android:layout_marginStart="24dp" />
+
+    <TextView
+        android:id="@+id/tv_favorites"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="興趣"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_address"
+        android:layout_marginStart="24dp" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:ems="13"
+        android:inputType="textPersonName"
+        android:hint="Name"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_name"
+        app:layout_constraintLeft_toRightOf="@+id/tv_name"
+        android:layout_marginStart="24dp" />
+
+    <EditText
+        android:id="@+id/et_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:ems="13"
+        android:inputType="textPersonName"
+        android:hint="age"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_age"
+        app:layout_constraintLeft_toRightOf="@+id/tv_age"
+        android:layout_marginStart="24dp" />
+
+    <EditText
+        android:id="@+id/et_phoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:ems="13"
+        android:inputType="textPersonName"
+        android:hint="phoneNumber"
+        app:layout_constraintLeft_toRightOf="@+id/tv_phoneNumber"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_phoneNumber" />
+
+    <EditText
+        android:id="@+id/et_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:ems="13"
+        android:inputType="textPersonName"
+        android:hint="address"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_address"
+        app:layout_constraintLeft_toRightOf="@+id/tv_address" />
+
+    <EditText
+        android:id="@+id/et_favor1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="6"
+        android:inputType="textPersonName"
+        android:hint="favor1"
+        app:layout_constraintLeft_toRightOf="@+id/tv_favorites"
+        android:layout_marginLeft="24dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_favorites"
+        android:layout_marginStart="24dp" />
+
+    <EditText
+        android:id="@+id/et_favor2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:ems="6"
+        android:inputType="textPersonName"
+        android:hint="favor2"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_favorites"
+        app:layout_constraintLeft_toRightOf="@+id/et_favor1"
+        android:layout_marginStart="24dp" />
+
+    <EditText
+        android:id="@+id/et_favor3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="6"
+        android:inputType="textPersonName"
+        android:hint="favor3"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/et_favor1"
+        app:layout_constraintLeft_toRightOf="@+id/tv_favorites"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp" />
+
+    <EditText
+        android:id="@+id/et_favor4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="6"
+        android:inputType="textPersonName"
+        android:hint="favor4"
+        app:layout_constraintLeft_toRightOf="@+id/et_favor3"
+        android:layout_marginLeft="24dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/et_favor3"
+        android:layout_marginStart="24dp" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="送出"
+        android:onClick="onSend"
+        android:layout_marginLeft="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/et_favor3"
+        android:layout_marginStart="24dp" />
+
+    <RadioGroup
+        android:id="@+id/rbtng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toRightOf="@+id/tv_male"
+        android:layout_marginLeft="24dp"
+        app:layout_constraintTop_toTopOf="@+id/tv_male"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_male">
+
+        <RadioButton
+            android:id="@+id/rbtn_male"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="男" />
+
+        <RadioButton
+            android:id="@+id/rbtn_female"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="女" />
+
+    </RadioGroup>
+
+</android.support.constraint.ConstraintLayout>
