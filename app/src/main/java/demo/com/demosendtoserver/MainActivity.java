@@ -77,10 +77,17 @@ public class MainActivity extends AppCompatActivity {
         new MyAsyncTask().execute(jsonStr);
     }
 
-    class MyAsyncTask extends AsyncTask<String,Integer,String> {
+    class MyAsyncTask extends AsyncTask<String, Integer, String> {
+
         @Override
         protected String doInBackground(String... params) {
             return uploadData(params[0]);
+        }
+
+        @Override
+        protected void onPostExecute(String result) {
+            super.onPostExecute(result);
+            System.out.println("result = " + result);
         }
     }
 
